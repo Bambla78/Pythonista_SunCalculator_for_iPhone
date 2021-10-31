@@ -1,0 +1,314 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 437}, {365, 34}}",
+        "class" : "Slider",
+        "attributes" : {
+          "flex" : "W",
+          "continuous" : true,
+          "enabled" : true,
+          "action" : "slider_action",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,0.000000)",
+          "value" : 0.5,
+          "uuid" : "EEC1AB04-2409-4C90-BD37-C72D603BEEFD",
+          "name" : "slider1"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 519}, {365, 34}}",
+        "class" : "Slider",
+        "attributes" : {
+          "flex" : "W",
+          "continuous" : true,
+          "enabled" : true,
+          "action" : "slider_action",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,0.000000)",
+          "value" : 0.5,
+          "uuid" : "24DD30D7-5087-44FF-BA7B-34FA81E96B25",
+          "name" : "slider2"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 166}, {127, 48}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 32,
+          "enabled" : true,
+          "font_name" : "HelveticaNeue-Light",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "center",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,0.000000)",
+          "uuid" : "81F11B65-0F76-42F8-B27C-6568A0728611",
+          "name" : "label1",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{225, 561}, {146, 38}}",
+        "class" : "Button",
+        "attributes" : {
+          "flex" : "L",
+          "action" : "copy_action",
+          "enabled" : true,
+          "font_size" : 15,
+          "title" : "   Copy",
+          "uuid" : "A2344984-839E-4B23-AE36-06F18F500A55",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,0.000000)",
+          "name" : "button1",
+          "image_name" : "ionicons-ios7-copy-outline-32"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 561}, {146, 38}}",
+        "class" : "Button",
+        "attributes" : {
+          "flex" : "R",
+          "action" : "shuffle_action",
+          "enabled" : true,
+          "font_size" : 15,
+          "title" : "   Shuffle",
+          "uuid" : "F748FBD8-3614-40E7-967B-301CD2DD5205",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,0.000000)",
+          "name" : "button2",
+          "image_name" : "ionicons-shuffle-32"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 86}, {98, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{248, 274}, {150, 32}}",
+          "uuid" : "6F45BB58-5164-4C80-B252-3D7AE591AF6B",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Direction",
+          "name" : "label2",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 126}, {98, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{248, 274}, {150, 32}}",
+          "uuid" : "BB4A328F-BE99-490B-8290-085BEB10FE26",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Height",
+          "name" : "label3",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 397}, {148, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{245, 201}, {150, 32}}",
+          "uuid" : "D5142812-C653-4557-BB9C-E685773B5B13",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Hour",
+          "name" : "label4",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 479}, {150, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{245, 201}, {150, 32}}",
+          "uuid" : "43FADDBD-0313-42A1-9FEF-CB6A19421CA9",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Minute",
+          "name" : "label5",
+          "font_name" : "<System>"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 86}, {257, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 198}, {150, 32}}",
+          "uuid" : "477BF681-2260-4C99-B0BD-43FE6728DDD5",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "label6",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 126}, {257, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 198}, {150, 32}}",
+          "uuid" : "7755BFFA-FA96-4CAE-A93D-AC14F501F157",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "label7",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {98, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 273}, {150, 32}}",
+          "uuid" : "C38A757F-14C6-40B1-9288-08DB76507914",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Date",
+          "name" : "label8",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 46}, {98, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 273}, {150, 32}}",
+          "uuid" : "498762E6-D689-4A0D-AE60-66DC6F2FF168",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Location",
+          "name" : "label9",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 6}, {257, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 273}, {150, 32}}",
+          "uuid" : "BC994E75-8C81-48C3-A433-5FCDB75C51A5",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "label10",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 46}, {257, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{250, 273}, {150, 32}}",
+          "uuid" : "2950336D-2A74-4308-8140-B0673B5CE8C0",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "label11",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 216}, {365, 173}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "class" : "ImageView",
+          "frame" : "{{275, 390}, {100, 100}}",
+          "image_name" : "iob:alert_256",
+          "name" : "imageview2",
+          "custom_attributes" : "",
+          "uuid" : "3A75E729-1F2B-4A68-800A-EE72775A0AF7"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {377, 610}}",
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "Sun Hour Calculator",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
