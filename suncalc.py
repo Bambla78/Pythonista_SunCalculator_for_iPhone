@@ -2246,6 +2246,8 @@ def connect(host='http://google.com'):
         return False
 
 def is_dst(dt=None, timezone="UTC"):
+	delta = datetime.timedelta(hours = 12)
+	dt = dt + delta
 	if dt is None:
 		dt = datetime.utcnow()
 	timezone = pytz.timezone(timezone)
@@ -3068,7 +3070,7 @@ def mainprogram():
 
 			from datetime import datetime
 
-			if (is_dst(datetime(a3, a2, a1, 12), timezone = zone)) == True:
+			if (is_dst(datetime(a3, a2, a1), timezone = zone)) == True:
 				a4 = a4 + 1*(-1)
 				timezone = timezone + 1
 				dialogs.hud_alert('Summertime is used.')
