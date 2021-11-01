@@ -3080,16 +3080,21 @@ def mainprogram():
 				strfloat = 0
 		
 		else:	
-			toffset = currenttz()
-			a4 = a4 + toffset*(-1)
-			timezone = timezone + toffset
+			now = arrow.get(a3,a2,a1)
+			now = now.shift(hours=+12)
+			now = now.to(zone) 
+ 
+			now_dst = now.dst() 
+			strnow = str(now_dst)
+			strnow = strnow[0:1]
+			strfloat = float(strnow)
+			a4 = a4 + strfloat*(-1)
+			timezone = timezone + strfloat
 	
-			if toffset == 1:
+			if strfloat == 1:
 				dialogs.hud_alert('Summertime is used.')
-				strfloat = 1
 			else:
 				dialogs.hud_alert('Standard time is used.')
-				strfloat = 0
 
 	if flag == 1:
 	
