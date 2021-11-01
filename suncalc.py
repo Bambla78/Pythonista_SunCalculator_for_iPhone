@@ -3037,6 +3037,7 @@ def mainprogram():
 		tz = myobject['locations'][row]['tz']
 		
 		now = arrow.get(a3,a2,a1)
+		now = now.shift(hours=+12)
 		now = now.to(tz)
  
 		now_dst = now.dst() 
@@ -3067,7 +3068,7 @@ def mainprogram():
 
 			from datetime import datetime
 
-			if (is_dst(datetime(a3, a2, a1), timezone = zone)) == True:
+			if (is_dst(datetime(a3, a2, a1, 12), timezone = zone)) == True:
 				a4 = a4 + 1*(-1)
 				timezone = timezone + 1
 				dialogs.hud_alert('Summertime is used.')
@@ -3117,6 +3118,7 @@ def mainprogram():
 		# wenn auch hier keine UTC gefunden wurde gibt es keine Absicherung.
 	
 		now = arrow.get(a3,a2,a1)
+		now = now.shift(hours=+12)
 		now = now.to(zone) 
  
 		now_dst = now.dst() 
