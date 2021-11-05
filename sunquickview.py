@@ -553,7 +553,7 @@ def get_location():
 	try:
 		latitude = loc['latitude']
 	except TypeError:
-		print('Kein GPS.')
+		print('No GPS.')
 		exit()
 	longitude = loc['longitude']
 
@@ -705,13 +705,13 @@ def zeiten():
 	
 	label = ''
 
-	label += 'Akt. Datum:		' + str(int(a3)) + '-' + str(int(a2)) + '-' + str(int(a1)) + '\n'
-	label += 'Akt. Zeitzone:	' + zone + '\n'
+	label += 'Current date:			' + str(int(a3)) + '-' + str(int(a2)) + '-' + str(int(a1)) + '\n'
+	label += 'Current timezone:	' + zone + '\n'
 	label += "------------------------------" + '\n'
 
-	label += "Breite		=	" + str(latitude_deg) + '\n'
-	label += "Länge		=	" + str(longitude_deg) + '\n'
-	label += "UTC  		=	" + str(timezone) + '\n'
+	label += "Latitude		=	" + str(latitude_deg) + '\n'
+	label += "Longitude		=	" + str(longitude_deg) + '\n'
+	label += "UTC  			=	" + str(timezone) + '\n'
 	label += "------------------------------" + '\n'
 
 	Jrise = Jtransit - omega_degrees/360
@@ -736,7 +736,7 @@ def zeiten():
 	b = tdauer.seconds
 	bstunden = int(b/3600)
 	bsekunden = int((b - bstunden*3600)/60)
-	label += "Taglänge	=" + '	' + str(bstunden).zfill(2) + ':' + str(bsekunden).zfill(2) + '\n'
+	label += "Day length	=" + '	' + str(bstunden).zfill(2) + ':' + str(bsekunden).zfill(2) + '\n'
 	label += "------------------------------" + '\n'
 	
 	uh = sunset.strftime("%H")
@@ -761,25 +761,25 @@ def zeiten():
 	
 	if norise == 0:
 	
-		label += 'Aufgang   (Std., Azimuth, Höhe)' + '\n'
+		label += 'Rise	(Hour, Direction, Height)' + '\n'
 		sonne(ah,am)
 		x1 = str(bq)
 		y = str(bt)
 		label += sunrise.strftime("%H:%M") + '		' + x1[0:5] + '		' + y[0:5] + '\n'
 		label += "------------------------------" + '\n'
-		label += 'Mittag    (Std., Azimuth, Höhe)' + '\n'
+		label += 'Noon	(Hour, Direction, Height)' + '\n'
 		sonne(mh,mm)
 		x2 = str(bq)
 		y = str(bt)
 		label += midday.strftime("%H:%M") + '		' + x2[0:5] + '		' + y[0:5] + '\n'
 		label += "------------------------------" + '\n'
-		label += 'Untergang (Std., Azimuth, Höhe)' + '\n'
+		label += 'Set		(Hour, Direction, Height)' + '\n'
 		sonne(uh,um)
 		x3 = str(bq)
 		y = str(bt)
 		label += sunset.strftime("%H:%M") + '		' + x3[0:5] + '		' + y[0:5] + '\n'
 		label += "------------------------------" + '\n'
-		label += 'Jetzt		(Std., Azimuth, Höhe)' + '\n'
+		label += 'Now		(Hour, Direction, Height)' + '\n'
 		sonne(ch,cm)
 		x4 = str(bq)
 		y = str(bt)
@@ -796,7 +796,7 @@ def zeiten():
 			
 		if currentDT > sunset:
 			rest = currentDT - sunset
-			label += '▼ seit ' + str(rest)
+			label += '▼ since ' + str(rest)
 
 	else:
 		exit()
@@ -836,7 +836,7 @@ if tzindex == 0:
 			tzindex = i
 			
 if tzindex == 0:
-	print('Zeitzone nicht ermittelbar.')
+	print('Timezone unknown.')
 	exit()
 				
 a4 = float(tznames[tzindex]['utc'])*(-1)
