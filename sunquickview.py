@@ -658,6 +658,7 @@ def sonne(hh,mm):
     br = x/rd
     bs = 1.02/(tan(br*rd+(10.3/(br*rd+5.11))))
     bt = ((br*rd)+(bs/60))/rd
+    bt = br # ohne Refraktion
 
 def zeiten():
 	pi=3.14159265359
