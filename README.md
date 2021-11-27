@@ -31,9 +31,9 @@ Note: Without an API key, reports you generate can only be opened in Pythonista 
 `pip install urllib3`
 
 8. Now copy the software to your iPad:
-    a. Extract SunCalc.zip to your iCloud-Pythonista3-folder into a separate iCloud directory
-    b. Open Pythonista, create a local directory SunCalc on your iPad and enter that directory
-    c. Use `+` and `File Import` and import all files from the iCloud SunCalc directory to your local directory within the Pythonista App (19 files in total including this manual)
+    * Extract SunCalc.zip to your iCloud-Pythonista3-folder into a separate iCloud directory
+    * Open Pythonista, create a local directory SunCalc on your iPad and enter that directory
+    * Use `+` and `File Import` and import all files from the iCloud SunCalc directory to your local directory within the Pythonista App (19 files in total including this manual)
 
 9. Now you should be ready to go:
 Launch `suncalc.py` in your iPhone and explore!
