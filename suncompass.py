@@ -25,6 +25,8 @@ sunset_val = 0
 current_val = 0
 compass_angle = 0
 heading = 'N'
+global pitch
+pitch = 0
 
 class Compass (Scene):
 	def setup(self):
@@ -99,6 +101,18 @@ class Compass (Scene):
 		self.label8.position = 75,750
 		self.label8.anchor_point = (0,0)
 		self.add_child(self.label8)
+    
+    self.label9 = LabelNode('', font=('ArialBold', 0.1*r))
+		self.label9.color = 'white'
+		self.label9.position = 315,725
+		self.label9.anchor_point = (0,0)
+		self.add_child(self.label9)
+		
+		self.label10 = LabelNode('', font=('ArialBold', 0.1*r))
+		self.label10.color = 'white'
+		self.label10.position = 315,710
+		self.label10.anchor_point = (0,0)
+		self.add_child(self.label10)
 	
 		v = ObjCInstance(self.view)
 		# Find close button.  I'm sure this is the worst way to do it
@@ -111,7 +125,9 @@ class Compass (Scene):
 		
 		compass.position = sin(compass_angle*pi/180)*r, cos(compass_angle*pi/180)*r		
 		self.label6.text = str(compass_angle)[0:6]	
-		self.label8.text = str(heading)		
+		self.label8.text = str(heading)
+		self.label9.text = str(roll)[0:6]	
+		self.label10.text = str(pitch)[0:6]						
 		
 		self.label5.text = text4
 			
@@ -135,7 +151,7 @@ class Compass (Scene):
 			
 			self.sunpos[3].rotation = current_val*pi/180
 			
-			self.label5.text = 'Sun does not rise / set'	
+			self.label5.text = 'Sonne geht nicht auf/unter'	
 		
 		#sleep(0.01)
 		#collect()
@@ -1036,8 +1052,13 @@ while closed == 0:
 		#If the direction D is less than 0 degrees, add 360 degrees to that value.
 		
 	horiginal = str(h)
+		
+	lage = motion.get_attitude()
+	roll = float(lage[0])
+	pitch = float(lage[1])
+	
 	drawsunstatus(x1,x2,x3,x4,h)
-	collect()
+	collect()	
 	
 motion.stop_updates()
 exit()
